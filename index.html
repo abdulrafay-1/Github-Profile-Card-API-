@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="title">Profile Card</h1>
+
+    <form id="form" onsubmit="return false">
+        <input type="text" autocomplete="off" placeholder="Enter github username" id="input">
+        <button class="search-btn" onclick="search()">Search</button>
+    </form>
+
+    <section class="container" style="display: none;">
+    <div class="card">
+            <div class="header">
+                <img id="avatar" src='' alt="">
+                <h2 id="name">Name</h2>
+            </div>
+
+            <div class="social-data">
+                <div class="data">
+                    <p>Followers</p>
+                    <p id="followers">100</p>
+                </div>
+                <div class="data">
+                    <p>Following</p>
+                    <p id="following">300</p>
+                </div>
+                <div class="data">
+                    <p>Repos</p>
+                    <p id="repos">20</p>
+                </div>
+            </div>
+            <div id="des">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi ea molestias veniam quam pariatur, quia assumenda cumque et modi dignissimos.
+            </div>
+            <button class="github-btn" onclick="showGithubProfile()">View on Github</button>
+        </div>
+    
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
